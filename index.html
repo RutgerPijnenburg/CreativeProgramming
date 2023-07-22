@@ -6,13 +6,34 @@
     <title>Rutger Pijnenburg</title>
     <link
       rel="stylesheet"
-      href="/Portfolio2/CreativeProgramming/Styles/General.css"
+      href="/CreativeProgramming/Styles/General.css"
     />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- <script>
+      let frame = 1;
+      let MouseDown = false;
+
+      addEventListener("mousemove", (event) => {
+        // if (MouseDown) {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        // mouseY = event.clientY;
+        frame = Math.round((mouseX / window.innerWidth) * 89);
+        if (frame < 1) {
+          frame = 1;
+        }
+
+        document.getElementById(
+          "js-Hero-Image"
+        ).src = `/CreativeElectronics/Images/CreativeElectronics/Table (${frame}).jpg`;
+        // }
+      });
+    </script> -->
   </head>
   <body>
     <div class="Navigation" id="Navigation">
@@ -44,9 +65,57 @@
       </div>
       <div class="Navigation-Element">
         <a href="mailto:r.a.pijnenburg@student.tue.nl"
-          ><button class="Hero-Button">Contact Me</button></a
+          ><button class="Hero-Button">Mail Me</button></a
         >
       </div>
     </div>
+    <section>
+      <div class="Column">
+        <p class="Title">Creative Programming</p>
+        <p class="Text">
+          In creative programming I got to work with my first real programming
+          language, this is the definition of a course that fits me well, as it
+          is so close to my professional identity. The course gave you new
+          surface level components to code with every week and then let you
+          explore what else you could do with the things you got. The course
+          worked really well with my eagerness to learn and challenge myself and
+          allowed me to put a lot of hours in without losing motivation, as the
+          final deliverable let me do whatever I wanted to make, as long as you
+          could influence the thing you made with something in the real world.
+          The course let me work a lot in technology and realization, as it
+          allowed me to make interactive prototypes, I also worked on some
+          creativity and aesthetics, because I put thought into colour pallets
+          and interactions. Lastly, I also worked on my professional skills, on
+          communication and teaching in a way, as I helpen a couple of people
+          with their code, explaining how x worked, or why their code did not
+          work. The real question is why this course went so well, and if I
+          could perhaps take elements that worked well to other courses. I think
+          it was mostly the subject, but it was also the way in which we were
+          allowed to learn, they allowed us to go on tangents, something I often
+          do to learn.
+        </p>
+      </div>
+      <!-- <img
+        id="js-Hero-Image"
+        draggable="false"
+        src="/CreativeElectronics/Images/CreativeElectronics/Table (1).jpg"
+        alt=""
+      /> -->
+      <video
+        class="Video"
+        src="/CreativeProgramming/Images/FinalGame 2023-07-20 10-52-46 (online-video-cutter.com).mp4"
+        loop
+        autoplay
+      ></video>
+      <div class="CaptionBox">
+        <!-- <p class="Caption"><nobr>drag to rotate</nobr></p> -->
+        <p class="Caption2">
+          <nobr>Here is some gameplay of the final game</nobr>
+        </p>
+      </div>
+    </section>
+    <script>
+      // document.querySelector("video").playbackRate = 0;
+    </script>
   </body>
 </html>
